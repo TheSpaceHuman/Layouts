@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.eot'), /* IE9 Compat Modes */
+  url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+/* Variables */
+$blue: #00a5db;
+$dark-blue: #0076c0;
+$hover: #0076c0;
+$pink: #e40071;
+$dark-pink: #e40071;
+$new: #a60084;
+$green: #209740;
+$emerald: #009e9c;
+$brow: #cb5000;
+$old-price: rgba(174, 175, 178, .8);
+$gray: #adafb2;
+
+.color--blue {
+  color: $blue;
+}
+.color--dark-blue {
+  color: $dark-blue;
+}
+.color-hover {
+  color: $hover;
+}
+.color--dark-pink {
+  color: $dark-pink;
+}
+.color--new {
+  color: $new;
+}
+.color--gray {
+  color: $gray;
+}
+
+/* Remove def style */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+label {
+  margin: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul,ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: black;
+}
+a:hover, a:focus {
+  color: #00a3d8;
+  text-decoration: none;
+}
+*:focus {
+  outline-color: transparent!important;
+}
+//Fonts
+//@import "fontsMix";
+//@include font-face(Ubuntu, fonts/Ubuntu-Bold, 700, normal, woff2 woff);
+
+input:focus, select:hover, textarea:focus {
+  //border: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+* {
+  transition: all .3s;
+}
+.container {
+  max-width: 1230px!important;
+}
+
+.modal-open {
+  overflow-y: auto!important;
+  padding: 0!important;
+}
+.compensate-for-scrollbar {
+  margin: 0!important;
+}
+body.compensate-for-scrollbar {
+  overflow-y: auto!important;
+}
+.modal.fade.show {
+  padding-right: 0!important;
+  overflow-y: auto!important;
+}
+
+.w-418 {
+  width: 418px;
+}
+.w-169 {
+  width: 169px;
+}
+.w-307 {
+  width: 307px;
+}
+.text {
+  margin-bottom: 20px;
+}
