@@ -1,0 +1,133 @@
+section.catalog-section
+    .container
+        .row
+            .col-12.p-0
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="index.html") Главная
+                        li.breadcrumb-item.active(aria-current="page") Каталог
+            .col-12
+                h1.title-2.mx-auto Каталог
+            aside.sidebar.col-12.col-sm-3
+                h2.sidebar_title Фильтр продукции
+                ul.sidebar_items
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample1") Кровати металлические
+                        .collapse#collapseExample1
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Одноярусные
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Двухъярусные
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Трёхъярусные
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Кровати из ЛДСП
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Медицинские
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2") Постельные принадлежности
+                        .collapse#collapseExample2
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true" aria-controls="collapseExample3") Мебель ДСП
+                        .collapse#collapseExample3
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="true" aria-controls="collapseExample4") Пружинные матрасы
+                        .collapse#collapseExample4
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="true" aria-controls="collapseExample5") Стулья-кресла офисные
+                        .collapse#collapseExample5
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                    li.sidebar_item.dropdown
+                        a.sidebar_link(data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="true" aria-controls="collapseExample6") Мебель на металл каркасе
+                        .collapse#collapseExample6
+                            ul.sidebar_item_colcollapse-items
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                                li.sidebar_item_colcollapse-item
+                                    a(href="#") Пусто
+                .poster-customer
+                    h4.poster-customer_title
+                        | Покупателю
+                    .poster-customer_items
+                        p.poster-customer_item.text-uppercase
+                            | Срочная доставка
+                        p.poster-customer_item
+                            | Вы оптовый покупатель - для Вас особые условия!
+                        p.poster-customer_item
+                            | На сломанные кровати - новые комплектующие.
+            .catalog-section_all.col-12.col-sm-9
+                form.catalog-section_all_filter
+                    span.catalog-section_all_filter_title Сортировать
+                    label.catalog-section_all_filter_lable по цвету:
+                    label.catalog-section_all_filter_select
+                        select.catalog-section_all_filter_reset
+                            option(selected) не выбрано
+                            option белый
+                            option красный
+                            option черный
+                    label.catalog-section_all_filter_lable по цене:
+                    lablel.catalog-section_all_filter_select
+                        select.catalog-section_all_filter_reset
+                            option(selected) не выбрано
+                            option убыванию
+                            option возрастанию
+
+                .catalog-section_all_items
+                    - for (var x = 0; x < 12; x++)
+                        .goods-slider_item
+                            .icon-slider-sale
+                            .goods-slider_top-text
+                                a(href="#")
+                                    .goods-slider_top-text_title Кровать металлическая
+                                    .goods-slider_top-text_intro-title двухъярусная Эконом
+                            .goods-slider_img
+                                a(href="#")
+                                    img(data-src="img/index/slider-goods/2.png" alt="good").lazyload
+                            .goods-slider_price
+                                p.old-price от <span>1200</span> <i class="fas fa-ruble-sign"></i>
+                                p.main-price от <span>960</span> <i class="fas fa-ruble-sign"></i>
+                            .goods-slider_description
+                                p основание: труба 40х20 мм сварная сетка - ячейки 100x100
+                                .goods-slider_description_hiden
+                                    p спинка: ЛДСП 16 мм
+                                    p соединение болтовое
+                                    p два усилителя
+                            .goods-slider_controls
+                                p Опт от
+                                input.counter(type="text" value="10" placeholder="10")
+                                .goods-slider_controls_counter
+                                    button.btn-plus
+                                    button.btn-minus
+                                button.btn.btn-dark-red.shop

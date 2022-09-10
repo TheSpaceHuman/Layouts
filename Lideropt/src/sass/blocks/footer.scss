@@ -1,0 +1,155 @@
+//FOOTER
+.footer-index {
+  background-image: url("../img/index/footer/footer-fon.jpg");
+  background-size: cover;
+  color: #f4f7fa;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  //padding: 70px 0;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $dark-red;
+  }
+  .fa-phone:before {
+    padding: 0;
+  }
+}
+.footer-index_left-block_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px 0 205px;
+}
+.footer-index_left-block_item {
+  padding-right: 105px;
+  padding-bottom: 10px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+.phone {
+  i {
+    font-size: 21px;
+  }
+  i:hover {
+    color: $dark-red;
+  }
+  a {
+    font-weight: 400;
+  }
+  .red {
+    color: #ff5353;
+  }
+  .green {
+    color: #05bb74;
+  }
+  .perple {
+    color: #946ab5;
+  }
+  div {
+    padding-bottom: 5px;
+  }
+}
+
+.footer-index_right-block {
+  margin: 70px 0 20px;
+
+}
+.footer-index_right-block_contacts {
+  padding-bottom: 15px;
+  flex: 0 1 250px;
+  text-align: right;
+  a.link-def {
+    font-weight: 400;
+    color: #fff;
+  }
+  .address {
+    margin-bottom: 25px;
+  }
+}
+.footer-index_right-block_time-work {
+  flex: 0 1 150px;
+  text-align: right;
+  margin-left: 60px;
+  .text:first-child {
+    margin-bottom: 55px;
+  }
+}
+.footer-index_right-block_social {
+  display: flex;
+  justify-content: flex-end;
+  i {
+    font-size: 27px;
+    padding: 15px;
+    color: #b8cadc;
+    //opacity: .7;
+  }
+  i:hover {
+    color: $dark-red;
+  }
+}
+.footer-index_right-block_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+//Modal
+.modal-header {
+  border-bottom: none;
+  text-align: center;
+}
+.modal.fade {
+  padding: 0!important;
+}
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none!important;
+}
+.modal-footer {
+  border: none!important;
+}
+.modal-backdrop {
+  background-color:#fff;
+  opacity:1!important;
+  border: 10px solid rgba(136, 136, 136, .4);
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body form {
+  margin: 0 auto;
+  float: none;
+  width: 300px;
+}
+
+.modal-content .close {
+  opacity: 1;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+.modal-title {
+  color: $dark-red;
+  margin: 0 auto;
+}
+
