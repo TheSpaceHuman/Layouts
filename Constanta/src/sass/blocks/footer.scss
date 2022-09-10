@@ -1,0 +1,62 @@
+//FOOTER
+.map {
+  background-image: url("../img/index/map.jpg");
+  background-size: cover;
+}
+.index-footer {
+  background-color: $dark3;
+  color: white;
+  font-size: 14px;
+}
+.footer-text-block {
+  margin-top: 70px;
+
+}
+p.footer-title {
+  color: $red1;
+  font-size: 14px;
+}
+p.footer-text {
+  color: white;
+  font-size: 14px;
+}
+a.email-link {
+  color: white;
+  text-decoration: underline;
+}
+.social i {
+  color: $gray2;
+  font-size: 1.3rem;
+  transition: color 0.5s;
+}
+.social i:hover {
+  color: $red1;
+}
+.address, .email {
+  padding: 20px 0;
+}
+.time, .phone {
+  padding: 0;
+}
+.social {
+  padding: 40px 0;
+}
+.copyright {
+  padding: 0 0 20px;
+  color: $gray2;
+}
+.email span {
+  color: $red1;
+}
+//Product
+ .map {
+  background-image: url("../img/production/map.png");
+  background-size: cover;
+}
+.production-footer  p.footer-text,
+.production-footer  a {
+  color: $dark3;
+}
+.production-footer.container-fluid {
+  background-color: #f2f2f2;
+}

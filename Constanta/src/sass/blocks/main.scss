@@ -1,0 +1,268 @@
+//MAIN
+.advantages {
+  color: $dark3;
+  margin-top: 100px;
+  margin-bottom: 120px;
+
+}
+.advantages_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.advantages_item {
+  flex: 1 1 20%;
+  padding: 10px;
+  min-width: 150px;
+  //justify-content: space-around;
+}
+.advantages_item img {
+  width: 100%;
+  height: auto;
+  max-width: 76px;
+}
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.advantages_text {
+  text-align: center;
+  font-size: 17px;
+}
+
+h2.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: $dark3;
+}
+.catalog_intotext {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.catalog_items {
+  display: flex;
+  //width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 170px;
+}
+.catalog_item {
+  flex: 0 1 30%;
+  padding: 15px;
+}
+.catalog_item_text {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: #101010;
+}
+.about {
+  padding-top: 130px;
+  padding-bottom: 190px;
+  background-image: url("../img/index/about-fon.png");
+  background-size: cover;
+  color: $dark3;
+}
+
+.about_text-block::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50px;
+  width: 7px;
+  height: 213px;
+  background-color: $red1;
+}
+p.text {
+  padding-bottom: 25px;
+}
+a.link {
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: $red1;
+  transition: color 0.5s;
+}
+a.link:hover {
+  color: $red2;
+}
+.question-manager {
+  margin-top: 130px;
+}
+.form-input {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+input.checkbox {
+  background: inherit;
+  border: none;
+}
+.form-input input,
+.form-input textarea {
+  padding: 10px;
+  text-align: center;
+  flex: 0 1 auto;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+.btn-fix {
+  padding: 15px 55px 13px;
+  text-transform: lowercase;
+  font-size: 18px;
+  color: white;
+  background-color: $red1;
+  margin: 0 auto;
+}
+.form {
+  margin-bottom: 120px;
+}
+
+//Chekbox
+
+.checkbox {
+  display: none;
+}
+.checkbox-custom {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  border: 2px solid $dark3;
+  //border-radius: 3px;
+}
+.checkbox:checked + .checkbox-custom::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  //display: block;
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  //background-color: $dark3;
+}
+.label {
+  //display: inline-block;
+  //vertical-align: middle;
+  line-height: 2;
+}
+
+//Production
+.breadcrumb {
+  font-size: 16px;
+  font-weight: 300;
+  color: $gray1;
+  background-color: transparent;
+}
+.breadcrumb-items {
+  display: flex;
+}
+.breadcrumb-items {
+  flex: 0 1 auto;
+}
+.left-saitbar .list-items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.left-saitbar .list-item {
+  flex: 1 1 auto;
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  padding: 10px;
+}
+list-item_wrapp {
+  padding: 8px;
+}
+.list-items_wrapp {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.list-item a {
+  color: $dark3;
+  font-size: 18px;
+  font-weight: 700;
+}
+.list-item_wrapp a:hover {
+  text-decoration: underline;
+}
+.list-item_wrapp a.active {
+  text-decoration: underline;
+}
+.saitbar-link::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  padding-left: 15px;
+  padding-right: 15px;
+  color: $red1;
+}
+.list-items_wrapp {
+  display: flex;
+  flex-direction: column;
+}
+.list-item_wrapp {
+  flex: 0 1 auto;
+  line-height: 28px;
+}
+.list-item_wrapp a {
+  padding-left: 40px;
+  font-weight: 300;
+}
+.right-content_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.right-content_item {
+  flex: 0 1 50%;
+  padding: 15px;
+}
+.right-content .title-page {
+  font-size: 40px;
+  font-weight: 700;
+  color: $dark3;
+}
+.text-block p.text {
+  font-weight: 300;
+  font-size: 15px;
+}
+// About
+.article_img img {
+  width: 100%;
+  height: auto;
+}
+.article_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article_text p {
+  flex: 0 1 auto;
+}
+//Contact
+.contact-main .left-text  p.footer-text {
+  color: $dark3;
+}
+//Table
+.table tr:first-child {
+  background-color: rgba(198, 198, 198, 0.3);
+}
+.table table,
+.table tr,
+.table td {
+  border: 1px solid #424242;
+}
+.table {
+  font-weight: 300;
+  font-size: 15px;
+}
