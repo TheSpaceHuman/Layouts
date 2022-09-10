@@ -1,0 +1,134 @@
+//HEADER
+.info-line {
+  padding: 12px;
+  background-color: #1d3a53;
+  color: $white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.info-line a {
+  color: $white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.items li,
+.items a,
+.items div {
+  flex: 0 1 auto;
+  padding: 0 5px;
+}
+.lang-ru {
+  margin-left: 15px;
+}
+.text {
+  white-space: normal!important;
+}
+.navbar-brand img {
+  height: 100%;
+}
+.navbar-brand .text {
+  color: $blue;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13.18px;
+  letter-spacing: 0.26px;
+}
+.navbar-brand {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 172px;
+}
+.navbar-brand img,
+.navbar-brand p {
+  flex: 0 1 100%;
+}
+.nav-item {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-item.active {
+  color: $blue!important;
+}
+.nav-link {
+  color: $dark1!important;
+}
+.nav-item:hover::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $blue;
+  //border-bottom: $blue solid 1px;
+}
+.btn-search::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: $blue;
+  content: "\f002";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-search {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: unset;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.navbar-nav {
+  margin-left: 10%;
+  flex-wrap: wrap;
+}
+.dropdown:hover {
+  .dropdown-menu {
+    display: flex;
+  }
+}
+.search-form {
+  display: none;
+  margin: 0 20px 0;
+  width: 100%;
+}
+.search-input {
+  border-radius: unset!important;
+  border: $blue solid 2px!important;
+  padding: 8px;
+  font-size: 18px;
+}
+.dropdown-menu {
+  border-radius: unset;
+  flex-wrap: wrap;
+  padding: 25px;
+  .dropdown-item {
+    flex: 0 1 auto;
+    white-space: normal;
+    color: #1b1923;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    padding: 5px 15px;
+    min-width: 200px;
+  }
+  .dropdown-item:hover {
+    background-color: #fff;
+    border-bottom: 2px solid $blue;
+    padding: 0 25px 20px 10px;
+    color: $blue;
+  }
+}
+.navbar-toggler {
+  display: none!important;
+}

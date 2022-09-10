@@ -1,0 +1,172 @@
+section.top-banner.container-fluid.p-0
+    .slider-top
+        - for (var x = 0; x < 3; x++)
+            div
+                .slider-top_item
+                    .slider-top_item_img
+                        picture.lazyload
+                            source(media="(max-width: 768px)" data-srcset="img/index/banner-mob.jpg")
+                            source(media="(min-width: 769px)" data-srcset="img/index/banner-des.png")
+                            img(data-src="img/index/banner-des.png" alt="tol-slider-item").lazyload
+                    .container
+                        .row
+                            .top-banner_lang.col-4.offset-8
+                                .top-banner_lang-ru
+                                    a(href="#") ru
+                                .top-banner_lang-en
+                                    a(href="#") en
+                            .top-banner_phone +7 499 553-03-98
+                            .top-banner_content.col-12
+                                h1.title Аэрофотосъемка
+                                p.description Оперативный метод получения пространственных данных
+                            .top-banner_buttons
+                                button.btn.btn-orange подробно
+
+
+section.about
+    .container
+        .row
+            .about_title.col-12
+                h2.title-2.desh Компания «ПТЕРО»
+            .about_text.col-12
+                p.text.light —  Является российским разработчиком специализированных беспилотных авиационных систем для выполнения аэросъемочных работ.
+                .hide-text#hide-text-1
+                    p.text Обладая более чем десятилетним опытом проектирования, производства и эксплуатации беспилотной авиационной техники, мы предлагаем поставку и внедрение в Ваше производство решений на основе беспилотных авиационных систем семейства «Птеро».
+                button.def.no-btn.mt-5#detail-1 подробно
+
+
+section.features.container-fluid
+        .row
+            .features_img.col-6.p-0
+                img(data-src="img/index/features-img-text.jpg" alt="").lazyload
+            .features_list.col-12.col-xl-6
+                .container
+                    .row
+                        h2.title-2.desh Особенности нашей системы:
+                        ul.circle-orange
+                            li Большая дальность и продолжительность полета (до 800 км / 8 ч).
+                            li Устойчивый полет БВС по аэросъемочному маршруту благодаря большой массе, скорости носителя и использованию специально разработанной системы автоматического управления PteRoBot.
+                            li Возможность установки профессионального аэросъемочного и любого другого оборудования весом до 5 кг.
+                            .hide-text#hide-text-2
+                                li Большой объем отсека для полезной нагрузки — 15 л.
+                                li Высокая прочность конструкции и её ремонтопригодность.
+                                li Оказание квалифицированной технической поддержки в течение всего жизненного цикла системы.
+                                li Внедрение решений на основе предлагаемой БАС «под ключ».
+                                li Полеты в большом диапазоне температур от -30 до +40 без потери летных характеристик.
+                        button.def.no-btn.white.mt-5#detail-2 подробно
+
+section.news.container
+    h2.title-2.desh.mt-4 Новости
+    .news-slider
+        div
+            a(href="#").link
+                .item-slider
+                    .wrapper-img
+                        img(data-src="img/index/news-1.jpg" alt="news 1").lazyload
+                    p.news-date 20.06.18
+                    p.news-title News 1
+                    p.news-text Sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+        div
+            a(href="#").link
+                .item-slider
+                    .wrapper-img
+                        img(data-src="img/index/news-2.jpg" alt="news 2").lazyload
+                    p.news-date 14.06.18
+                    p.news-title News 2
+                    p.news-text Sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+        div
+            a(href="#").link
+                .item-slider
+                    .wrapper-img
+                        img(data-src="img/index/news-3.jpg" alt="news 3").lazyload
+                    p.news-date 10.06.18
+                    p.news-title News 3
+                    p.news-text Sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+        div
+            a(href="#").link
+                .item-slider
+                    .wrapper-img
+                        img(data-src="img/index/news-1.jpg" alt="news 4").lazyload
+                    p.news-date 20.06.18
+                    p.news-title News 1
+                    p.news-text Sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+
+
+
+
+section.service.container-fluid
+    .row
+        .left-block.col-12.col-lg-6
+            .service_container
+                h2.title-2.desh Услуги
+                ul.service-items.blue
+                    li
+                        a.service-link(href="#") Аэрофотосъемка топографическая и мониторинговая
+                    li
+                        a.service-link(href="#") Тепловизионная аэросъемка
+                    li
+                        a.service-link(href="#") Мультиспектральная аэросъемка
+                    li
+                        a.service-link(href="#") Мониторинг линейных объектов
+                    li
+                        a.service-link(href="#") Визуальный мониторинг
+                    li
+                        a.service-link(href="#") 3D-моделирование
+                    li
+                        a.service-link(href="#") Обработка данных
+                    li
+                        a.service-link(href="#") Вычисление объемов
+        .right-block.col-12.col-lg-6
+            .service_container
+                h2.title-2.desh Сфера применения
+                ul.service-items.orange
+                    li
+                        a.service-link(href="#") Сельское хозяйство
+                    li
+                        a.service-link(href="#") Лесное хозяйство
+                    li
+                        a.service-link(href="#") Нефть и газ
+                    li
+                        a.service-link(href="#") Энергетика
+                    li
+                        a.service-link(href="#") Водное хозяйство
+                    li
+                        a.service-link(href="#") Горное дело
+                    li
+                        a.service-link(href="#") Экологический мониторинг
+                    li
+                        a.service-link(href="#") Поиск и спасение
+
+section.opportunities.container
+    .row
+        h2.title-2.desh.mx-auto.mt-5 Наши возможности
+        .items.p-4
+            .item
+                .wrapper
+                    img(data-src="img/index/opportunities-1.png" alt="1").lazyload
+                p.text Команда квалифицированных специалистов в области авиационных систем, радиоэлектроники и автоматики, водородных технологий, сбора и обработки пространственных данных, информационных систем
+            .item
+                .wrapper
+                    img(data-src="img/index/opportunities-2.png" alt="2").lazyload
+                p.text Собственный центр компетенций по разработке водородных топливных элементов
+            .item
+                .wrapper
+                    img(data-src="img/index/opportunities-3.png" alt="3").lazyload
+                p.text КБ и современная производственная площадка в Москве
+            .item
+                .wrapper
+                    img(data-src="img/index/opportunities-4.png" alt="4").lazyload
+                p.text Собственный парк беспилотных авиационных систем, аэросъемочного оборудования и программного обеспечения
+
+
+
+
+
+
+
+
+
+
+
+
+

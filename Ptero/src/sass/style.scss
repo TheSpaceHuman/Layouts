@@ -1,0 +1,29 @@
+/*===========Normalize=========*/
+@import "blocks/normalize";
+/*===============FancyBox==============*/
+@import "../libs/fancybox/dist/jquery.fancybox.css";
+/*===============ANIMATION==============*/
+@import "blocks/animation";
+/*============bootstrap============*/
+@import "../libs/bootstrap/dist/css/bootstrap.css";
+/*============slick============*/
+@import "../libs/slick/slick.css";
+@import "../libs/slick/slick-theme.css";
+
+
+
+
+/*===========VARS=========*/
+@import "vars";
+/*========HEADER==========*/
+@import "blocks/header";
+/*==========MAIN==========*/
+@import "blocks/main";
+/*============FOOTER============*/
+@import "blocks/footer";
+/*============MEDIA============*/
+@import "blocks/media";
+/*============MENU============*/
+@import "blocks/menu";
+
+
