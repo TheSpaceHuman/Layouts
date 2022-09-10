@@ -1,0 +1,7 @@
+.team__right-block
+    .right-block-items
+        each val in [{title: 'Медицина', img: 'assets/img/index/directions-1.png'},{title: 'Стоматология', img: 'assets/img/index/directions-2.png'},{title: 'Ветеринария', img: 'assets/img/index/directions-3.png'},{title: 'Патологоанатомия', img: 'assets/img/index/directions-4.png'},{title: 'Фармацевтическая промышленность', img: 'assets/img/index/directions-5.png'},{title: 'Индустрия красоты', img: 'assets/img/index/directions-6.png'},{title: 'Электронная промышленность', img: 'assets/img/index/directions-7.png'},{title: 'Пищевая индустрия', img: 'assets/img/index/directions-8.png'},{title: 'Клининговые услуги', img: 'assets/img/index/directions-9.png'},{title: 'Машиностроение', img: 'assets/img/index/directions-10.png'}]
+            .right-block-item
+                .right-block-item_img
+                    img(src=val.img alt=val.title)
+                .right-block-item_title=val.title

@@ -1,0 +1,58 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+        block title
+            title Default template
+
+    body
+        #app.app-wrapper
+            block header
+                include ../include/header
+            block content
+                main.content
+                    | Content
+            block footer
+                include ../include/footer
+
+            // Modals
+            #feedback-product.modal
+                form.feedback-product
+                    product-meta-data
+                    .row
+                        .col-12.mb-15
+                            .feedback-product__title.page-title-2 Оформить заказ
+                        .col-12.mb-15
+                            the-input(placeholder="Имя" name="name")
+                        .col-12.mb-15
+                            the-input(placeholder="Email" name="email")
+                        .col-12.mb-15
+                            the-input(placeholder="Телефон" name="phone" :phone="true")
+                        .col-12.mb-35
+                            the-input(placeholder="Комментарий" name="message" type="textarea" :row="5")
+                        .col-12.d-flex.justify-content-center
+                            button(type="submit").btn-secondary Отправить
+
+
+
+            #feedback.modal
+                form.feedback
+                    .row
+                        .col-12
+                            h4.feedback__title.page-title-2 Обратный звонок
+                        .col-12.col-md-6.mb-15
+                            the-input(placeholder="Имя" name="name" )
+                        .col-12.col-md-6.mb-35
+                            the-input(placeholder="Телефон" name="phone" :phone="true")
+                        .col-12.d-flex.justify-content-center
+                            button(type="submit").btn-secondary Отправить
+
+
+        block scripts
+
+
+
+

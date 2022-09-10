@@ -1,0 +1,45 @@
+header.header#header(style="background-image: url(assets/img/index/logo_bg.jpg);")
+    .big-container
+        .header-top-line
+            .header__logo
+                a(href="/")
+                    img(src='assets/img/index/logo_header.png', alt='Логотип компании')
+                span перчатки и средства <br>
+                    | индивидуальной защиты
+            nav.main-navigation
+                ul.main-navigation__items
+                    li.main-navigation__item
+                        a(v-scroll-to="'#header'").main-navigation__item__link Главная
+                    li.main-navigation__item
+                        a(v-scroll-to="'#catalog', '-135px'").main-navigation__item__link Каталог
+                    li.main-navigation__item
+                        a(v-scroll-to="'#price', '0px'").main-navigation__item__link Прайс
+                    li.main-navigation__item
+                        a(v-scroll-to="'#team', '0px'").main-navigation__item__link Основные направления
+                    li.main-navigation__item
+                        a(v-scroll-to="'#video', '0px'").main-navigation__item__link Видео
+            nav.main-mobile-navigation
+                mobile-menu(:right="true")
+                    .main-mobile-navigation__items
+                        .main-mobile-navigation__item
+                            a(v-scroll-to="'#header', '-135px'").main-mobile-navigation__item__link Главная
+                        .main-mobile-navigation__item
+                            a(v-scroll-to="'#catalog'").main-mobile-navigation__item__link Каталог
+                        .main-mobile-navigation__item
+                            a(v-scroll-to="'#price'").main-mobile-navigation__item__link Прайс
+                        .main-mobile-navigation__item
+                            a(v-scroll-to="'#team'").main-mobile-navigation__item__link Основные направления
+                        .main-mobile-navigation__item
+                            a(v-scroll-to="'#video'").main-mobile-navigation__item__link Видео
+            .header__phone
+                <i class="fas fa-phone-square-alt"></i>
+                a(href="tel:+7(495)321 95 87") +7(495)321 95 87
+            .header__button
+                a(href="#feedback" rel="modal:open" class="btn-primary") Обратный звонок
+                    | <i class="fas fa-arrow-circle-right"></i>
+        .header__slogan
+            h1.header__slogan__title ПЕРЧАТКИ <br> УНИВЕРСАЛЬНЫЕ
+            p.header__slogan__subtitle
+                | Прежде чем купить одноразовые перчатки, важно знать профиль для <br>их применения, следовательно, требования, предъявляемые к <br>данному виду защиты от инфекции.
+
+

@@ -1,0 +1,150 @@
+.header {
+  min-height: 720px;
+  color: #fff;
+}
+.header__button {
+  a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  button {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.header-top-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  //border-bottom: 1px dashed rgba(108, 149, 155, 0.4);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+
+  @media screen and (max-width: $desktopWidth) {
+    justify-content: space-around;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    justify-content: space-around;
+  }
+  @media screen and (max-width: $tableWidth) {
+    justify-content: space-around;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    justify-content: space-around;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  img {
+    width: auto;
+  }
+  span {
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 8px;
+    display: block;
+  }
+}
+.main-navigation__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 8px;
+  @media screen and (max-width: $desktopWidth) {
+
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    padding: 25px 0;
+  }
+  @media screen and (max-width: $tableWidth) {
+    padding: 25px 0;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    display: none;
+  }
+}
+.main-navigation__item {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.4;
+}
+.header__phone {
+  display: flex;
+  align-items: center;
+  i {
+    padding-right: 10px;
+  }
+}
+.header__slogan {
+  width: 100%;
+  padding: 180px 8vw 30px;
+  &__title {
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    @media screen and (max-width: $tableWidth) {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 29px;
+    }
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 21px;
+    opacity: 0.85;
+    @media screen and (max-width: $tableWidth) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 16px;
+    }
+  }
+}
+.main-mobile-navigation {
+  display: none;
+  position: relative;
+  .bm-burger-button {
+    position: unset;
+    width: 30px;
+    height: 25px;
+  }
+  .bm-menu {
+    background-color: #fff;
+  }
+  .bm-cross {
+    background-color: $primary-color;
+  }
+  .bm-burger-bars {
+    background-color: $primary-color;
+  }
+  @media screen and (max-width: $desktopWidth) {
+
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+
+  }
+  @media screen and (max-width: $tableWidth) {
+
+  }
+  @media screen and (max-width: $phoneWidth) {
+    display: block;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  &__item {
+    margin-bottom: 16px;
+  }
+}

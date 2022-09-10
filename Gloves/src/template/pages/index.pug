@@ -1,0 +1,209 @@
+extends ../layout/main
+block title
+    title Перчатки
+block content
+    main.main
+        section.materials
+            .container
+                h2.visually-hidden Материалы
+                .row.materials-items
+                    .col-12.col-sm-12.col-md-4
+                        .materials-item(style="background-image: url(assets/img/index/cat-product-1.png);")
+                            h3.materials-item__title Латекс
+                            p.materials-item__subtitle
+                                | Перчатки диагностические (смотровые) премиум класса из натурального латекса, неанатомической формы. Двойное хлорирование, текстуророванная поверхность, по всей ладони.
+                            .materials-item__link
+                                a(href="#") Показать
+                    .col-12.col-sm-12.col-md-4
+                        .materials-item(style="background-image: url(assets/img/index/cat-product-2.png);")
+                            h3.materials-item__title Нитрил
+                            p.materials-item__subtitle
+                                | Перчатки диагностические (смотровые) премиум класса из натурального латекса, неанатомической формы. Двойное хлорирование, текстуророванная поверхность, по всей ладони.
+                            .materials-item__link
+                                a(href="#") Показать
+                    .col-12.col-sm-12.col-md-4
+                        .materials-item(style="background-image: url(assets/img/index/cat-product-3.png);")
+                            h3.materials-item__title Винил
+                            p.materials-item__subtitle
+                                | Перчатки диагностические (смотровые) премиум класса из натурального латекса, неанатомической формы. Двойное хлорирование, текстуророванная поверхность, по всей ладони.
+                            .materials-item__link
+                                a(href="#") Показать
+        include ../include/filtersGroup
+        section.products#catalog
+            .container
+                .products__items.row
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-1.jpg', alt='p1')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах
+                                .products__item__link
+                                    include ../include/productModal
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-2.jpg', alt='p2')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах.
+                                .products__item__link
+                                    include ../include/productModal
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-3.jpg', alt='p3')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах.
+                                .products__item__link
+                                    include ../include/productModal
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-4.jpg', alt='p4')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах.
+                                .products__item__link
+                                    include ../include/productModal
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-5.jpg', alt='p5')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах.
+                                .products__item__link
+                                    include ../include/productModal
+                    .col-12.col-md-4
+                        .products__item
+                            .products__item__photo
+                                lazy-component
+                                    img(src='assets/img/index/product-6.jpg', alt='p6')
+                            .products__item__content
+                                .products__item__title
+                                    h4 GOLDEN HANDS
+                                    span Уникальное Внутреннее Покрытие
+                                p.products__item__text Перчатки нитриловые неопудренные, текстурированные на пальцах.
+                                .products__item__link
+                                    include ../include/productModal
+
+        section.price-banner#price(style="background-image: url(assets/img/index/price_bg.jpg);")
+            .container
+                .price-banner__message
+                    .price-banner__message__title
+                        h3 Наш прайс - лист
+                    .price-banner__message__button
+                        a(href="#").btn-secondary Скачать
+
+        section.directions
+            .container
+                h2.directions__title.page-title-2 Наши преимущества
+                .directions__items.row
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-1.png')
+                            .directions__item__content
+                                h3.directions__item__title Гарантия качества
+                                p.directions__item__subtitle перчатки проходят проверку на всех этапах производства
+
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-2.png')
+                            .directions__item__content
+                                h3.directions__item__title Оперативная обработка заказов
+                                p.directions__item__subtitle все заказы обрабатываются в день поступления заявки
+
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-3.png')
+                            .directions__item__content
+                                h3.directions__item__title Быстрая доставка
+                                p.directions__item__subtitle Доставка по Москве в день заказа
+
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-4.png')
+                            .directions__item__content
+                                h3.directions__item__title Бесплатное обучение клинтов
+                                p.directions__item__subtitle проводим обучение по продуктовой матрице и технике продах
+
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-5.png')
+                            .directions__item__content
+                                h3.directions__item__title Бесплатные образцы
+                                p.directions__item__subtitle предоставляем образцы перчаток
+
+                    .col-12.col-md-4
+                        .directions__item
+                            .directions__item__img
+                                .directions__item__img__fon
+                                    img(src='assets/img/index/advantages-icon-6.png')
+                            .directions__item__content
+                                h3.directions__item__title Ценовая политика
+                                p.directions__item__subtitle Гибкая и лояльная ценовая политика для клиентов
+
+
+
+
+
+        section.team#team
+            .big-container
+                h2.team__title.page-title-2 основные направления
+                .row
+                    .col-12.col-sm-12.col-md-12.col-lg-4
+                        .team__left-block
+                            h3.left-block__title НАША КОМАНДА
+                            p.left-block__p Компания обладает всеми необходимыми ресурсами для успешного развития и взаимовыгодного сотрудничества с партнерами: командой профессионалов, собственной складской и транспортной логистикой.
+                            p.left-block__p Наша Стратегия — постоянно совершенствовать все аспекты нашей деятельности: качество товара и услуг, широту ассортимента, логистику, а также профессионализм персонала.
+
+                    .col-12.col-sm-12.col-md-12.col-lg-8
+                        include ../include/teamRightBlock
+        section.video#video
+            .container
+                h2.video__title.page-title-2 ВИДЕО
+                .video__items.row
+                    .col-12.col-md-4
+                        .video__item
+                            .video__item__iframe
+                                lazy-component
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/EKkzbbLYPuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    .col-12.col-md-4
+                        .video__item
+                            .video__item__iframe
+                                lazy-component
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/EKkzbbLYPuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    .col-12.col-md-4
+                        .video__item
+                            .video__item__iframe
+                                lazy-component
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/EKkzbbLYPuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
