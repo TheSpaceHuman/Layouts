@@ -1,0 +1,245 @@
+//MAIN
+.main-slider {
+  background-image: url("../img/index/index-logo.jpg");
+  background-size: cover;
+  height: 360px;
+}
+.popular-goods_items,
+.sale-goods_items {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.popular-goods_item,
+.sale-goods_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 19%;
+  padding: 10px;
+}
+
+img.underlining {
+  //border-bottom: 1px solid #c6c6c6;
+}
+.brands_items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin: 25px 0;
+
+}
+.brands_item {
+  display: flex;
+  height: 224px;
+  width: 19%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 1px solid #c6c6c6;
+}
+.brands_item > img {
+  //max-height: 138px;
+}
+.brands_item:last-child {
+  border-right: none;
+}
+.advantages_item img {
+  width: 132px;
+  height: 132px;
+}
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../img/index/fon-1.png");
+  background-size: cover;
+}
+.advantages_items {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19%;
+  text-align: center;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news_items {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+.news {
+  background-image: url("../img/index/fon-2.png");
+  background-position: center;
+  background-size: cover;
+}
+.news_item {
+  display: flex;
+  width: 32%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+.btn--center {
+  margin: 0 auto;
+}
+.btn-price {
+  display: inline-block;
+  border-radius: 7px;
+  padding: 3px 7px;
+  opacity: 0.6;
+  background-color: #dddddd;
+  color: $red;
+  border: inherit;
+}
+
+.info {
+  width: 100%;
+  //padding: 10px;
+}
+.info_weight {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: $gray2;
+}
+.info_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.flag1,
+.flag2,
+.flag3 {
+  padding-left: 8px;
+}
+.info_weight > .active {
+  color: $red;
+}
+.sale-goods_item > .title,
+.popular-goods_item > .title{
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+}
+.sale-goods_item > .introtext,
+.popular-goods_item > .introtext{
+  font-weight: 300;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+}
+.popular-goods_item img,
+.sale-goods_item img {
+  height: auto;
+  max-height: 160px;
+}
+.popular-goods_title,
+.sale-goods_title,
+.brands_title,
+.why-our-goods_title,
+.news_title,
+.form-question_title {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 8px 18px 0;
+  text-align: center;
+}
+.popular-goods_title::after,
+.sale-goods_title::after,
+.brands_title::after,
+.why-our-goods_title::after,
+.news_title::after,
+.form-question_title::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 8px;
+  //left: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 3px;
+  background-color: black;
+}
+.brands_link {
+  color: $red;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.brands-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.advantages_item > .title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 8px;
+}
+.advantages_item > .text {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.why-our-goods_article_top {
+  display: flex;
+  padding: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.why-our-goods_article_top > .title {
+  padding-left: 10px;
+}
+.btn-news {
+  font-size: 14px;
+  font-weight: 300;
+  color: $red;
+  text-decoration: underline;
+  line-height: 1.5;
+
+}
+.btn-submit {
+  border: inherit;
+  background-color: $red;
+  color: white;
+  font-size: 16px;
+  padding: 5px 12px;
+  margin: 0 auto;
+}
+.form--br {
+  border-radius: 0;
+}
+.count {
+  padding: 4px 8px;
+}
+.btn-count {
+  border: inherit;
+  background-color: transparent;
+  color: $red;
+  opacity: 0.6;
+}

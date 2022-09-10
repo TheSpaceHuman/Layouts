@@ -1,0 +1,81 @@
+//HEADER
+.mini-line-banner {
+  height: 70px;
+  background-color: #152843;
+  color: white;
+}
+.mini-line-banner_phone a {
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.mini-line-banner_phone {
+  display: flex;
+  height: 70px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mini-line-banner_delivery a {
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.mini-line-banner_delivery {
+  display: flex;
+  height:70px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.main-menu_logo {
+  display: block;
+  position: relative;
+  width: 123px;
+  height: 55px;
+}
+.top-menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content:space-around;
+}
+.main-menu_right {
+  display: flex;
+  height: 70px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-menu_link a {
+  font-family: Roboto;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+}
+.fa-angle-down {
+  color: $red;
+}
+.main-menu_logo_title {
+  position: absolute;
+  left: 685px;
+  top: 74px;
+  color: $red;
+  width: 290px;
+}
+.main-menu_logo_title h2 {
+  font-size: 40px;
+}
+.main-menu_logo_title span {
+  font-size: 130px;
+
+}
+.main-menu_right_basket {
+  padding-left: 20px;
+}
+.dropdown-menu {
+  border-radius: 0;
+}
