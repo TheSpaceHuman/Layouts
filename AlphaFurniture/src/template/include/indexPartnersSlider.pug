@@ -1,0 +1,15 @@
+.index-partners.base-slider
+    .index-partners__header
+        .index-partners__header__title Партнеры
+    .partners-slider
+        carousel(:per-page="1" :autoplay="false" :navigation-enabled="true" navigation-prev-label="<i class=\"fas fa-chevron-left\"></i>" navigation-next-label="<i class=\"fas fa-chevron-right\"></i>" :pagination-enabled="false")
+            each val in [{img: 'assets/img/index/customers-1.jpg', title: 'Наш официальный партнер 1', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis dolorem doloribus enim est inventore quae quo quod rem veniam?'}, {img: 'assets/img/index/customers-2.jpg', title: 'Наш официальный партнер 2', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis dolorem doloribus enim est inventore quae quo quod rem veniam?'},{img: 'assets/img/index/customers-3.jpg', title: 'Наш официальный партнер 3', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis dolorem doloribus enim est inventore quae quo quod rem veniam?'},{img: 'assets/img/index/customers-4.jpg', title: 'Наш официальный партнер 4', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis dolorem doloribus enim est inventore quae quo quod rem veniam?'}]
+                slide.partner-slide
+                    a(href="#124")
+                        .partner-slide__card
+                            .partner-slide__card__img
+                                lazy-component
+                                    img(src=val.img alt=val.title)
+                            .partner-slide__card__text
+                                .partner-slide__card__text__title=val.title
+                                .partner-slide__card__text__description=val.description

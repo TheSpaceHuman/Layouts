@@ -1,0 +1,14 @@
+.index-news.base-slider
+    .index-news__header
+        .index-news__header__title Новости
+    .news-slider
+        carousel(:per-page-custom="[[320, 1],[750, 2],[1024, 3],[1200, 4]]" :autoplay="false" :navigation-enabled="true" navigation-prev-label="<i class=\"fas fa-chevron-left\"></i>" navigation-next-label="<i class=\"fas fa-chevron-right\"></i>" :pagination-enabled="false")
+            each val, index in [{img: 'assets/img/index/news-1.jpg', title: 'Новый дизайн в серии CAPITAL', description: 'Новый дизайн столов в серии CAPITAL, добавлена фрезеровка на столешницах и опорах столов.'}, {img: 'assets/img/index/news-2.jpg', title: 'Обновлена линейка мягкой мебели', description: 'Обновлена линейка мягкой мебели для офиса, теперь она стала удовлетворять еще более широким требованиям...' },{img: 'assets/img/index/news-3.jpg', title: 'Возможности нестандартного изготовления', description: 'Предложение по нестандартной мебели по коллекциям: Bern, Capital, Harvard, Ministry, Davos, Berkeley, Oxford'},{img: 'assets/img/index/news-4.jpg', title: 'Высокий сезон на рынке офисной мебели', description: 'С сентября по декабрь каждого года мы наблюдаем высокую активность на рынке офисной мебели.'},{img: 'assets/img/index/news-1.jpg', title: 'Приемные зоны Faro', description: 'С сентября по декабрь каждого года мы наблюдаем высокую активность на рынке офисной мебели.'},{img: 'assets/img/index/news-2.jpg', title: 'Приемные зоны Faro', description: 'С сентября по декабрь каждого года мы наблюдаем высокую активность на рынке офисной мебели.'},{img: 'assets/img/index/news-3.jpg', title: 'Приемные зоны Faro', description: 'С сентября по декабрь каждого года мы наблюдаем высокую активность на рынке офисной мебели.'},{img: 'assets/img/index/news-4.jpg', title: 'Приемные зоны Faro', description: 'С сентября по декабрь каждого года мы наблюдаем высокую активность на рынке офисной мебели.'}]
+                slide.news-slide
+                    a(href='#news-' + index)
+                        .news-slide__card
+                            .news-slide__card__img
+                                lazy-component
+                                    img(src=val.img)
+                            .news-slide__card__title=val.title
+                            .news-slide__card__description=val.description

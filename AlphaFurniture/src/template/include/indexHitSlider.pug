@@ -1,0 +1,12 @@
+.index-hit.base-slider
+    .index-hit__header
+        .index-hit__header__title Хиты продаж
+    carousel(:per-page-custom="[[320, 1],[750, 2],[1200, 3]]" :autoplay="false" :navigation-enabled="true" navigation-prev-label="<i class=\"fas fa-chevron-left\"></i>" navigation-next-label="<i class=\"fas fa-chevron-right\"></i>" :pagination-enabled="false")
+        each val in [{img: 'assets/img/index/hit-1.jpg', title: 'зона переговоров Frame Cotto'}, {img: 'assets/img/index/hit-1.jpg', title: 'ТРЕНИНГ-ЦЕНТР Ibiza'},{img: 'assets/img/index/hit-1.jpg', title: 'зона переговоров Frame Cotto'},{img: 'assets/img/index/hit-1.jpg', title: 'ТРЕНИНГ-ЦЕНТР Ibiza'},{img: 'assets/img/index/hit-1.jpg', title: 'Приемные зоны Faro'}]
+            slide
+                a(href="#124")
+                    .base-slide
+                        .base-slide__img
+                            lazy-component
+                                img(src=val.img)
+                        .base-slide__title=val.title

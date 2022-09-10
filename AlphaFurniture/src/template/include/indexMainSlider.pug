@@ -1,0 +1,10 @@
+.main-slider
+    carousel(:per-page="1" :autoplay="true" :autoplay-timeout="12000")
+        each val in [{img: 'assets/img/index/main-slide-1.jpg', title: 'quaranta', subtitle: 'Кабинеты премиум класса'}, {img: 'assets/img/index/main-slide-1.jpg', title: 'quaranta', subtitle: 'Кабинеты премиум класса'},{img: 'assets/img/index/main-slide-1.jpg', title: 'quaranta', subtitle: 'Кабинеты премиум класса'},{img: 'assets/img/index/main-slide-1.jpg', title: 'quaranta', subtitle: 'Кабинеты премиум класса'}]
+            slide.main-slider__slide
+                .main-slider__slide__img
+                    lazy-component
+                        img(src=val.img alt=val.title)
+                    .main-slider__slide__img__text
+                        .main-slider__slide__img__text__title=val.title
+                        .main-slider__slide__img__text__subtitle=val.subtitle

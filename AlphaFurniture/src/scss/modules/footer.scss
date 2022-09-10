@@ -1,0 +1,195 @@
+.footer {
+  color: #f6f6f6;
+  .big-container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  &__colums {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $tableWidth) {
+      flex-direction: column;
+    }
+  }
+  &__colum.column-1 {
+    color: #d3d3d3;
+    flex: 0 0 calc(100% / 3);
+    padding-right: 120px;
+
+    @media screen and (max-width: $smDesktopWidth) {
+      flex: 1 1 calc(100% / 3);
+      padding-right: 60px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      width: 100%;
+      flex: 1 1 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+
+  }
+  &__colum.column-2 {
+    color: #f6f6f6;
+    flex: 0 0 calc(100% / 3 * 2 / 3);
+    padding-left: 50px;
+    padding-right: 50px;
+    @media screen and (max-width: $smDesktopWidth) {
+      flex: 1 1 calc(100% / 3);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      flex: 1 1 100%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+  &__colum.column-3 {
+    color: #f6f6f6;
+    flex: 0 0 calc(100% / 3 * 2 / 3);
+    padding-left: 50px;
+    padding-right: 50px;
+    @media screen and (max-width: $smDesktopWidth) {
+      flex: 1 1 calc(100% / 3);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      flex: 1 1 100%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+  &__colum.column-4 {
+    color: #f6f6f6;
+    flex: 0 0 calc(100% / 3 * 2 / 3);
+    @media screen and (max-width: $smDesktopWidth) {
+      flex: 1 1 100%;
+    }
+    @media screen and (max-width: $tableWidth) {
+      flex: 1 1 100%;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+  &__colum {
+    font-size: 13px;
+    flex: 0 0 auto;
+    margin-bottom: 25px;
+
+    &__copyright {
+      @media screen and (max-width: $tableWidth) {
+        display: none;
+      }
+    }
+    &__map {
+      margin-bottom: 50px;
+      a {
+        border-bottom: 1px solid #fff;
+      }
+    }
+    &__socials {
+      display: flex;
+      align-items: center;
+      &__item {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          padding: 5px;
+          border-radius: 50%;
+          border:1px solid $primary-color;
+          margin-right: 12px;
+        }
+      }
+    }
+    &__contacts {
+      padding-bottom: 40px;
+      i {
+        margin-right: 10px;
+        color: $primary-color;
+      }
+      color: #fff;
+
+      &__address {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      &__time {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      &__phone {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      &__email {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    }
+    &__title {
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: $primary-color;
+    }
+    &__logo {
+      margin-bottom: 81px;
+      img {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+    &__info {
+      font-weight: 400;
+      &__title {
+        font-size: 13px;
+        font-weight: 400;
+        color: $primary-color;
+        text-transform: uppercase;
+        line-height: 1.8;
+      }
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      a {
+        display: block;
+        padding: 5px 0;
+        line-height: 1.7;
+      }
+    }
+  }
+
+}

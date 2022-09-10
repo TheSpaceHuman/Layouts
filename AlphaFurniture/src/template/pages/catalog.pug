@@ -1,0 +1,43 @@
+extends ../layout/main
+block title
+    title Кабинеты
+block content
+    main.main.base-page
+        .big-container
+            .decor-line
+        .container.mb-30
+            nav.breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/') Каталог
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') Кабинет
+                    li.breadcrumbs__item.active КАБИНЕТЫ ECONOM CLASS
+            h1.page--header КАБИНЕТЫ ECONOM CLASS
+            p.mb-60.w-650 Кабинеты раздела Econom class — это воплощение того, что действительно важно. Невысокая стоимость — далеко не единственное преимущество кабинетов, представленных в этом разделе. Стильные и практичные, они не уступают по своей функциональности кабинетам Business или First класса.
+            include ../include/catalog
+        .big-container.bg--fon-1.mb-90
+            .container
+                .index-sale.base-slider
+                    .index-sale__header
+                        .index-sale__header__title Другие разделы
+                    carousel(:per-page-custom="[[320, 1],[750, 2],[1200, 3]]" :autoplay="false" :navigation-enabled="true" navigation-prev-label="<i class=\"fas fa-chevron-left\"></i>" navigation-next-label="<i class=\"fas fa-chevron-right\"></i>" :pagination-enabled="false")
+                        each val in [{img: 'assets/img/catalog/catalog-1.jpg', title: 'Зоны коммуникаций'}, {img: 'assets/img/catalog/catalog-2.jpg', title: 'Приемные зоны'},{img: 'assets/img/catalog/catalog-3.jpg', title: 'Зоны работы сотрудников'},{img: 'assets/img/catalog/catalog-4.jpg', title: 'Зоны ожидания'},{img: 'assets/img/catalog/catalog-1.jpg', title: 'Зоны коммуникаций'}, {img: 'assets/img/catalog/catalog-2.jpg', title: 'Приемные зоны'},{img: 'assets/img/catalog/catalog-3.jpg', title: 'Зоны работы сотрудников'},{img: 'assets/img/catalog/catalog-4.jpg', title: 'Зоны ожидания'}]
+                            slide
+                                a(href="#124")
+                                    .base-slide
+                                        //.base-slide__icon
+                                        //    img(src="assets/img/index/sale-icon.png")
+                                        .base-slide__img
+                                            img(src=val.img)
+                                        .base-slide__title=val.title
+
+
+
+
+
+
+
+
+
+

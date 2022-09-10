@@ -1,0 +1,80 @@
+extends ../layout/main
+block title
+    title Карточка товара
+block content
+    main.main.base-page
+        .big-container
+            .decor-line
+        .container.mb-30
+            nav.breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/') Каталог
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') Кабинеты
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') КАБИНЕТЫ ECONOM CLASS
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') Fermo wood
+                    li.breadcrumbs__item.active СТОЛ L160
+
+        .container.mb-60
+            product-detail(title="СТОЛ L160" kit="FERMO WOOD" counter-name="product-detail-counter")
+                template(v-slot:buy)
+                    button.btn.btn-buy В корзину
+                template(v-slot:buy-one-click)
+                    button.btn.btn-qbuy Купить в один клик
+        .container.mb-30
+            .product-detail-tabs
+                el-tabs(type="card")
+                    el-tab-pane(label="Характеристики")
+                        .product-detail-tabs__options
+                            ul.product-detail-tabs__options-list
+                                li.product-detail-tabs__options-item
+                                    h4 Страна производитель
+                                    p Россия
+                                li.product-detail-tabs__options-item
+                                    h4 Срок доставки
+                                    p 3-5 дней
+                                li.product-detail-tabs__options-item
+                                    h4 МатериалЛ
+                                    p ДСП
+                                li.product-detail-tabs__options-item
+                                    h4 Толщина ​​столешницы
+                                    p 38 мм
+                                li.product-detail-tabs__options-item
+                                    h4 Кромка
+                                    p ПВХ
+                                li.product-detail-tabs__options-item
+                                    h4 Типы​​ столов
+                                    p руководителя
+                                li.product-detail-tabs__options-item
+                                    h4 Размер
+                                    p 160 х 90 х 75
+                                li.product-detail-tabs__options-item
+                                    h4 Материал опор
+                                    p ЛДСП
+                                li.product-detail-tabs__options-item
+                                    h4 Кожаная вставка
+                                    p Нет
+                                li.product-detail-tabs__options-item
+                                    h4 Бренд
+                                    p fermo wood
+
+
+                    el-tab-pane(label="Доставка и сборка")
+                        h4 Доставка и сборка
+                    el-tab-pane(label="Оплата")
+                        h4 Оплата
+                    el-tab-pane(label="Описание товара")
+                        h4 Описание товара
+
+
+
+
+
+
+
+
+
+

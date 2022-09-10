@@ -1,0 +1,10 @@
+section.catalog
+    .row
+        each val, index in [{img: 'assets/img/catalog/catalog-1.jpg', title: 'FERMO WOOD', description: 'Динамика и легкость в каждой детали. Изящность и вдохновение в лаконичном исполнении.'}, {img: 'assets/img/catalog/catalog-2.jpg', title: 'FERMO METAL', description: 'Гармония идеи и ее воплощения. Идеальное решение для небольших площадей, ценовая доступность.'},{img: 'assets/img/catalog/catalog-3.jpg', title: 'ROTONDA', description: 'Воплощение стиля и надежности. Современный дизайн кабинета в сочетании с классическим натуральным цветом дерева.'},{img: 'assets/img/catalog/catalog-4.jpg', title: 'TERRA', description: 'Стильный и выразительный дизайн. Скульптурные линии и теплые цвета в сочетании с натуральным рисунком дерева.'},{img: 'assets/img/catalog/catalog-5.jpg', title: 'LORD', description: 'Экономичная классика — элементы классической итальянской отделки, примененные к меламиновой основе. Классический дизайн и итальянское качество.'},{img: 'assets/img/catalog/catalog-6.jpg', title: 'ROLA', description: 'Совершенные формы и текстура натурального дерева. Функциональность и разнообразие вариантов — гарантия создания комфортного офиса.'},{img: 'assets/img/catalog/catalog-7.jpg', title: 'LAVA', description: 'Продуманный стиль и передовые технологии. Сочетание современных материалов и цветов натурального дерева.'},{img: 'assets/img/catalog/catalog-8.jpg', title: 'SIRIUS', description: 'Современная и нестандартная модель. Передняя панель — кожезаменитель под крокодила. Алюминиевые молдинги.'},{img: 'assets/img/catalog/catalog-9.jpg', title: 'POSITANO', description: 'Концептуальный классицизм. Массивные строгие формы в сочетании с выделкой панелей под крокодиловую кожу создают ощущение престижа.'}]
+            .col-12.col-md-4
+                a.catalog__card(href='#catalog-item-' + index)
+                    .catalog__card__img
+                        lazy-component
+                            img(src=val.img)
+                    .catalog__card__title=val.title
+                    .catalog__card__description=val.description

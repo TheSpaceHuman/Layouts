@@ -1,0 +1,29 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        block title
+            title Default template
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+        link(rel="stylesheet" href="assets/vendors/jquery-modal/jquery.modal.min.css")
+        link(rel="stylesheet" href="assets/vendors/growl/jquery.growl.css")
+        link(rel="stylesheet" href="assets/vendors/slick/slick.css")
+        link(rel="stylesheet" href="assets/vendors/slick/slick-theme.css")
+    body
+        #app.app-wrapper
+            block header
+                include ../include/header
+            block content
+                main.content
+                    | Content
+            block footer
+                include ../include/footer
+
+        block scripts
+            script(src="assets/vendors/jquery/jquery.js")
+            script(src="assets/vendors/jquery-modal/jquery.modal.min.js")
+            script(src="assets/vendors/growl/jquery.growl.js")
+            script(src="assets/vendors/slick/slick.min.js")
+            script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")

@@ -1,0 +1,103 @@
+extends ../layout/main
+block title
+    title Кабинет ECONOM CLASS
+block content
+    main.main.base-page
+        .big-container
+            .decor-line
+        .container.mb-30
+            nav.breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/') Каталог
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') Кабинеты
+                    li.breadcrumbs__item
+                        a(href='#dsadweq') КАБИНЕТЫ ECONOM CLASS
+                    li.breadcrumbs__item.active Fermo wood
+
+        .container.mb-60
+            .product-collection
+                .product-collection__top-line-info
+                    .product-collection__top-line-info__title
+                        h1 Fermo wood
+                    .product-collection__top-line-info__desctiption
+                        p
+                            | <b>В комплект входит:</b> стол письменный L160, приставка подкатная, шкаф комбинированный, корпус шкафа высокого с полками, светильник Aqua Cil
+                    .product-collection__top-line-info__control
+                        .product-collection__top-line-info__control__price
+                            .product-collection__top-line-info__control__price__main
+                                .product-collection__top-line-info__control__price__main__primary <i class="fas fa-euro-sign"></i> 1 781
+                                .product-collection__top-line-info__control__price__main__secondary <i class="fas fa-ruble-sign"></i> 130 375
+                            .product-collection__top-line-info__control__price__old
+                                .product-collection__top-line-info__control__price__old__primary <i class="fas fa-euro-sign"></i> 1 900
+                                .product-collection__top-line-info__control__price__old__secondary <i class="fas fa-ruble-sign"></i> 15 375
+
+                        .product-collection__top-line-info__control__button
+                            button.btn.btn-buy-collection В корзину
+                .product-collection__big-slider
+                    .slider-collection-for
+                        each val, index in ['assets/img/product-collection/slide-1.jpg','assets/img/product-collection/slide-2.jpg','assets/img/product-collection/slide-3.jpg','assets/img/product-collection/slide-4.jpg','assets/img/product-collection/slide-1.jpg','assets/img/product-collection/slide-2.jpg','assets/img/product-collection/slide-3.jpg','assets/img/product-collection/slide-4.jpg']
+                            .slider-collection-for__item
+                                a(href=val data-fancybox="images" data-caption='slide-' + index)
+                                    img(data-lazy=val alt='slide-' + index)
+                    .slider-collection-nav
+                        each val, index in ['assets/img/product-collection/slide-1.jpg','assets/img/product-collection/slide-2.jpg','assets/img/product-collection/slide-3.jpg','assets/img/product-collection/slide-4.jpg','assets/img/product-collection/slide-1.jpg','assets/img/product-collection/slide-2.jpg','assets/img/product-collection/slide-3.jpg','assets/img/product-collection/slide-4.jpg']
+                            .slider-collection-nav__item
+                                img(data-lazy=val alt='slide-' + index)
+
+                .product-collection__tabs
+                    el-tabs(type="card")
+                        el-tab-pane(label="Готовые изделия")
+                            .product-collection__tabs__filters.row
+                                .product-collection__tabs__filter.filter--option.col-12.col-md-8
+                                    .product-collection__tabs__filter__title Элементы серии
+                                    .product-collection__tabs__filter__controls
+                                        ul.product-collection__tabs__filter__controls__items
+                                            input(type="hidden" name="option_id" value="")
+                                            each val, index in [{title: 'Столы письменные', icon: '<svg class="icon"><use xlink:href="#desks"></use></svg>'}, {title: 'Приставные элементы', icon: '<svg class="icon"><use xlink:href="#added-elements"></use></svg>'}, {title: 'Тумбы', icon: '<svg class="icon"><use xlink:href="#pedestals"></use></svg>'}, {title: 'Шкафы', icon: '<svg class="icon"><use xlink:href="#cabinets"></use></svg>'}, {title: 'Столы для переговоров', icon: '<svg class="icon"><use xlink:href="#meeting-tables"></use></svg>'}, {title: 'Электрификация', icon: '<svg class="icon"><use xlink:href="#electrification"></use></svg>'}, {title: 'Аксессуары', icon: '<svg class="icon"><use xlink:href="#accessories"></use></svg>'}]
+                                                li.product-collection__tabs__filter__controls__item(data-id=index)
+                                                    .product-collection__tabs__filter__controls__item__icon !{val.icon}
+                                                    .product-collection__tabs__filter__controls__item__title #{val.title}
+                                            li.product-collection__tabs__filter__controls__item.action--reset(data-id="")
+                                                .product-collection__tabs__filter__controls__item__icon
+                                                    i.fas.fa-times-circle
+                                                .product-collection__tabs__filter__controls__item__title Сбросить фильтр
+                                .product-collection__tabs__filter.filter--color.col-12.col-md-4
+                                    .product-collection__tabs__filter__title Цвета элементов
+                                    .product-collection__tabs__filter__controls
+                                        ul.product-collection__tabs__filter__controls__items
+                                            input(type="hidden" name="color_id" value="")
+                                            each val, index in [{title: 'Color1', img: 'assets/img/product-detail/color-1.jpg'}, {title: 'Color2', img: 'assets/img/product-detail/color-2.jpg'}, {title: 'Color3', img: 'assets/img/product-detail/color-3.jpg'}]
+                                                li.product-collection__tabs__filter__controls__item(data-id=index)
+                                                    .product-collection__tabs__filter__controls__item__img
+                                                        img(src=val.img alt=val.title)
+                                            li.product-collection__tabs__filter__controls__item.action--reset(data-id="")
+                                                .product-collection__tabs__filter__controls__item__icon
+                                                    i.fas.fa-times-circle
+                                                .product-collection__tabs__filter__controls__item__title Сбросить фильтр
+
+                            .product-collection__tabs__products
+                                .row
+                                    - for (var x = 0; x < 6; x++)
+                                        .col-12.col-sm-6.col-md-6.col-lg-4
+                                            product-card(title="СТОЛ L160" kit="FERMO WOOD" :optipn="[{title:'ВЕНГЕ',colorImg:'assets/img/product-detail/color-1.jpg',productImg:'assets/img/product-collection/product-1.jpg',article:'41S002 V3V2',size:'160 x 90 x h75 см',weight:'72',volume:'0.098',stock:13,free:8,price:{rub:120000,euro:1600},oldPrice:{rub:130375,euro:1781},icon:''},{title:'ДУБ DH СВЕТЛЫЙ',colorImg:'assets/img/product-detail/color-2.png',productImg:'assets/img/product-collection/product-2.jpg',article:'82S002 V3V2',size:'160 x 90 x h75 см',weight:'72',volume:'0.098',stock:12,free:5,price:{rub:110000,euro:1500},oldPrice:{rub:130375,euro:1781},icon:''},{title:'ДУБ СВЕТЛЫЙ',colorImg:'assets/img/product-detail/color-3.png',productImg:'assets/img/product-collection/product-3.jpg',article:'723S002 V3V2',size:'160 x 90 x h75 см',weight:'72',volume:'0.098',stock:79,free:55,price:{rub:100000,euro:1550},oldPrice:{rub:110375,euro:1681},icon:'assets/img/index/sale-icon.png'}]")
+                                                template(v-slot:buy)
+                                                    button.btn.btn-buy В корзину
+
+                        el-tab-pane(label="Комплектующие")
+                            h4 Комплектующие
+                        el-tab-pane(label="Расстановки")
+                            h4 Расстановки
+                        el-tab-pane(label="Описание")
+                            h4 Описание
+
+
+
+
+
+
+
+
+
+

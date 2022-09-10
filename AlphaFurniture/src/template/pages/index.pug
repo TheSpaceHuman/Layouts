@@ -1,0 +1,86 @@
+extends ../layout/main
+block title
+    title Альфа Мебель Москва
+block content
+    main.main
+        .big-container.mb-60
+           include ../include/indexMainSlider
+        .container.mb-30
+            .index-catalog
+                .index-catalog__header
+                    .index-catalog__header__title Каталог
+                    .index-catalog__header__link
+                        a(href="#dsa") Весь каталог
+                .row.index-catalog__items
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-1.jpg")
+                                .index-catalog__card__title Кабинеты
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-2.jpg")
+                                .index-catalog__card__title Зоны коммуникаций
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-3.jpg")
+                                .index-catalog__card__title Приемные зоны
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-4.jpg")
+                                .index-catalog__card__title Зоны работы сотрудников
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-5.jpg")
+                                .index-catalog__card__title Зоны ожидания
+                    .col-12.col-md-4.index-catalog__item
+                        a(href="#123")
+                            .index-catalog__card
+                                .index-catalog__card__img
+                                    lazy-component
+                                        img(src="assets/img/index/catalog-6.jpg")
+                                .index-catalog__card__title Стулья и кресла
+
+        .container.mb-90
+            include ../include/indexHitSlider
+        .big-container
+            .index-about.row.mb-90
+                .index-about__img.col-12.col-md-6
+                    lazy-component
+                        img(src="assets/img/index/about.jpg")
+                .index-about__text.col-12.col-md-6
+                    .index-about__text__title Немного о нас
+                    .index-about__text__content Успешная работа на российском мебельном рынке на протяжении десяти лет позволила реализовать ряд удачных проектов и получить признание среди клиентов. Мы сотрудничаем с крупными коммерческими фирмами, а также с государственными организациями и частными лицами. Предлагаем не только мебель для офиса, но и полный комплекс услуг по ее установке, а также доставке по Москве.
+                    .index-about__text__link
+                        a(href="#2142") Подробно
+        .big-container.bg--fon-1.mb-90
+            .container
+                include ../include/indexSaleSlider
+        .container.mb-90
+            include ../include/indexNewsSlider
+        .container.mb-60
+            include ../include/indexPartnersSlider
+
+
+
+
+
+
+
+
+
+
